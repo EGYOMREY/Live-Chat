@@ -1,6 +1,8 @@
 # Live-Chat (FullStack)
 [Live-Chat](https://fullstack-chat.herokuapp.com/) is a chat which lets you communicate with other users using a Nickname by sending general or direct messages. The messages are stored and retrieved from MongoDB (mLab), the server is built with Express and Node.js. The styling was done with Semantic-UI.
 
+[Try it!](https://fullstack-chat.herokuapp.com/)
+
 ## Screenshots
  ![image](https://i.imgur.com/prEHuyY.png)
  
