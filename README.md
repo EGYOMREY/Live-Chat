@@ -11,6 +11,13 @@
 # Motivation
 The motivation for this project was to learn about real-time event-based communication with socket.io, and also practice the usage of the MEAN stack (even though Angular wasn't used in the UI because this project is too simple).
 
+# Project structure
+Inside the `src` folder you can find:
+* `index.js`: file which contains the server setup with Node.js, Express and the connection to MongoDB (mlab)
+* `sockets.js`: file which holds the logic for socket.io -> the event-based communication
+* `models`: folder which contains the Schema used for MongoDB
+* `public`: folder with the html, css and js
+
 # Project requirements
 
 ### Node.js
