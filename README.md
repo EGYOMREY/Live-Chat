@@ -6,7 +6,7 @@
 ## Screenshots
  ![image](https://i.imgur.com/prEHuyY.png)
  
- ![image](https://i.imgur.com/R1N1uwO.png)
+ ![image](https://i.imgur.com/jj9lZ4l.png)
 
 # Motivation
 The motivation for this project was to learn about real-time event-based communication with socket.io, and also practice the usage of the MEAN stack (even though Angular wasn't used in the UI because this project is too simple).
@@ -34,6 +34,8 @@ To run this project, you have to clone it and install all the dependencies used.
 To run the project locally, write this command in your CL
 
     $ npm start
+
+Tip: since I used MongoDB as a database (mlab), and if you want the chat to work properly you should create an [mlab account](https://mlab.com/welcome/), a db and insert your credentials in the `index.js` file, in `line 13`.
 
 ## Languages & Tools
 
