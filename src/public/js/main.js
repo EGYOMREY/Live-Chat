@@ -12,13 +12,13 @@ $(document).ready(function () {
 	messageForm.submit(function (e) {
 		e.preventDefault();
 		var messageToSend = $("<div/>").text(messageBox.val().trim()).html();
-		if (messageToSend.length < 150) {
+		if (messageToSend.length <= 150 && messageToSend.length > 0) {
 			socket.emit("Send Message", messageToSend, function (data) {
 				chat.append("<p class='error'>" + data + "</p>");
 			});
 			messageBox.val("");
 		} else {
-			chat.append("<p class='error'>'Please submit a message with less than 150 characters'</p>");
+			chat.append("<p class='error'>'Please submit a valid message'</p>");
 		}
 	});
 
@@ -33,7 +33,7 @@ $(document).ready(function () {
 	nickForm.submit(function (e) {
 		e.preventDefault();
 		var nickNameToSubmit = $("<div/>").text(nickname.val().trim()).html();
-		if (nickNameToSubmit.length < 10) {
+		if (nickNameToSubmit.length <= 15 && nickNameToSubmit.length > 0)) {
 			socket.emit("New User", nickNameToSubmit, function (data) {
 				if (data) {
 					$("#nickWrap").hide();
@@ -46,7 +46,7 @@ $(document).ready(function () {
 			});
 		} else {
 			$(".ui.error.message").show();
-			nickError.html("Please use a username with less than 10 characters</div>");
+			nickError.html("Usernames should be between 1-15 characters long</div>");
 		}
 	});
 
